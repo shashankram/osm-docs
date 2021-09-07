@@ -172,8 +172,7 @@ spec:
     port:
       number: 14001
       protocol: https
-    tls:
-      skipClientCertValidation: false # mTLS (defaults to false)
+    # Client certificate validation is performed by default for https backends
   sources:
   - kind: Service
     namespace: "$osm_namespace"
@@ -212,8 +211,7 @@ spec:
     port:
       number: 14001
       protocol: https
-    tls:
-      skipClientCertValidation: false # mTLS (defaults to false)
+    # Client certificate validation is performed by default for https backends
   sources:
   - kind: Service
     namespace: "$osm_namespace"

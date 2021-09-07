@@ -175,8 +175,7 @@ spec:
     port:
       number: 14001
       protocol: https
-    tls:
-      skipClientCertValidation: false
+    # Client certificate validation is performed by default for https backends
   sources:
   - kind: Service
     name: "$nginx_ingress_service"
@@ -214,8 +213,7 @@ spec:
     port:
       number: 14001
       protocol: https
-    tls:
-      skipClientCertValidation: false
+    # Client certificate validation is performed by default for https backends
   sources:
   - kind: Service
     name: "$nginx_ingress_service"
